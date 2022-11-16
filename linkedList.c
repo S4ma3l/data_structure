@@ -115,6 +115,7 @@ void enterAtEndOfList()
     newNode->next = NULL;
     printf("Enter the data to be inserted");
     scanf("%d", &newNode->data);
+    temp = head;
     while (temp->next != NULL)
     {
         temp = temp->next;
@@ -136,7 +137,7 @@ void enterAtSpecifiedIndex()
     printf("Enter the data to be inserted");
     scanf("%d", &newNode->data);
     temp = head;
-    for (i = 1; i < pos; i++)
+    for (i = 1; i < pos - 1; i++)
     {
         temp = temp->next;
     }
